@@ -1,0 +1,12 @@
+{
+  "TimeTable": {
+    "Monday": "Pandas and Numpy learning and practice and SQL at the end of the day",
+    "Tuesday": "Learning how to Plot/ visualize using visualization library",
+    "Wednesday": "Tableau and Excel (Alternate every 4 hours)",
+    "Thursday": "Statistics and linear alg for Machine learning",
+    "Friday": "Python machine learning with Krish Naik",
+    "Saturday": "Revision of the week and Spark if possible",
+    "Sunday": "Work on projects from Dev Ashish and Krish Naik and Abhishek Thakur",
+    "Spare_Time": "Learn Unreal Engine along with C++"
+  }
+}
