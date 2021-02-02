@@ -10,6 +10,9 @@ diff_time = dt.time(0, 20, 00)
 count = 1
 flag = True
 day_today = datetime.today().strftime('%A')
+with open("timetable.json") as con_file:
+    config = json.load(con_file)
+timetable = config["TimeTable"]
 
 while True:
     x = datetime.today().replace(microsecond=0)
@@ -45,7 +48,7 @@ while True:
         a = 0
         # print(f"From inner while loop: {a}")
         battery = psutil.sensors_battery()
-        Notification(f" Hi! We're doing\n",\
+        Notification(f" Hi! We're doing {timetable[day_today]}\n",\
                      '\n'f"Don't Forget to drink Water\nTotal glasses drank: {count}\nBattery percentage : {battery.percent}\nPower Plugged in : {battery.power_plugged}").send()
         count += 1
         break
